@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteCond %{SCRIPT_FILENAME} !-d
+
+
+RewriteRule ^lib/(.*)$ libs.php?id=$1 [NC]
+
+RewriteRule ^x$ x.php [NC,L]
